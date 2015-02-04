@@ -3,18 +3,9 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <endian.h>
 
 #include "kallsyms_in_memory.h"
-
-#ifndef le32toh
-#define le32toh         letoh32
-#endif
-
-#ifndef le16toh
-#define le16toh         letoh16
-#endif
-
+#include "portable_endian.h"
 
 #define PATTERN_MAX     8
 
